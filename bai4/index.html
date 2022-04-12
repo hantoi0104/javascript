@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+  Nhập Số : <br>
+  <input id="ip1" type="text"><br>
+  Hệ số: <br>
+  <select id="ip2">
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+  </select>
+  <input onclick="timTich()" type="submit" value="show">
+</form>
+<script>
+  function timTich(){
+    let c = document.getElementById("ip1").value;
+    let d = document.getElementById("ip2").value;
+    let a = new Number(c);
+    let b = new Number(d);
+    let tich = a*b;
+    alert("Tích là: "+ tich)
+  }
+</script>
+</body>
+</html>

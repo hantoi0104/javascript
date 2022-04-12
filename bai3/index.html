@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    Nhập user: <br>
+    <input id="ip1" type="text"><br>
+    Nhập pass: <br> Nhập Số 1: <br>
+    <input id="ip2" type="password"><br>
+    Nhập email: <br>
+    <input id="ip3" type="email"><br>
+    Nhập phone: <br>
+    <input id="ip4" type="tel"><br>
+    <input onclick="cos()" type="button" value="submit">
+</form>
+<script>
+    function cos() {
+        let a = document.getElementById("ip1").value;
+        let b = document.getElementById("ip2").value;
+        let c = document.getElementById("ip3").value;
+        let d = document.getElementById("ip4").value;
+        console.log("user:" +a)
+        console.log("pass:" +b)
+        console.log("email" +c)
+        console.log("phone:" +d)
+    }
+</script>
+</body>
+</html>

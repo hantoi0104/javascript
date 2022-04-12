@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+    Nhập Số 1: <br>
+    <input id="ip1" type="text"><br>
+    Nhập Số 2: <br>
+    <input id="ip2" type="text"><br>
+    <input onclick="sum()" type="submit" value="submit">
+</form>
+<script>
+    function sum(){
+        let c = document.getElementById("ip1").value;
+        let d = document.getElementById("ip2").value;
+        let a = new Number(c);
+        let b = new Number(d);
+        let sum = a*b;
+        alert("Tổng hai số là: "+ sum)
+    }
+</script>
+
+</body>
+</html>
